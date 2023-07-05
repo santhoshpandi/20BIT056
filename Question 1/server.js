@@ -1,5 +1,5 @@
-var ht = require('http');
-const server =ht.createServer(function(req,res){
+var http = require('http');
+const server =http.createServer(function(req,res){
     res.write("<html><head></head><body><center><h3>Server Running ....</h3></center></body></html>");
     if(req.url=="/number")
     {
