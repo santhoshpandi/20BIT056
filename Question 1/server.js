@@ -1,5 +1,5 @@
 var ht = require('http');
-const serv =ht.createServer(function(req,res){
+const server =ht.createServer(function(req,res){
     res.write("<html><head></head><body><center><h3>Server Running ....</h3></center></body></html>");
     if(req.url=="/number")
     {
@@ -38,5 +38,5 @@ const serv =ht.createServer(function(req,res){
     }
 });
 
-serv.listen(8008);
+server.listen(8008);
 console.log("server running at port 8008");
